@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="bootstrap" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/scripts/index.js" />
+        <item url="file://$PROJECT_DIR$/scripts/jquery.easing.1.3.js" />
+        <item url="file://$PROJECT_DIR$/scripts/aboutJS.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/scripts/index.js" />
+      <root url="file://$PROJECT_DIR$/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/scripts/jquery-2.2.4.min.js" />
+      <root url="file://$PROJECT_DIR$/scripts/jquery.easing.1.3.js" />
+      <root url="file://$PROJECT_DIR$/scripts/jquery.mobile.customized.min.js" />
+      <root url="file://$PROJECT_DIR$/scripts/aboutJS.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

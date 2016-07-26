@@ -1,0 +1,226 @@
+@font-face {
+    font-family: Fertigo;
+    src: url(../fonts/Fertigo.ttf);
+}
+
+@font-face {
+    font-family: Signature;
+    src: url(../fonts/bladrf.ttf);
+}
+
+body{
+    font-family: Fertigo;
+    padding: 0px;
+    margin:0px;
+    background-color: black;
+    color: white;
+
+}
+
+.logo{
+    height:36px;
+    width: 200px;
+
+}
+
+.navbar-brand{
+    height: 28px;
+    padding: 6px;
+    margin: 0px 3px 6px 0px;
+}
+
+.navbar{
+    background-color: black;
+    padding-left: 10px;
+    min-height: 28px;!important;
+
+}
+
+.navbar-inverse{
+    background-color: black;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: black;
+    color:#ffffff;
+}
+
+.dropdown-menu{
+    background-color:white;
+    padding: 1px;
+    min-width:114px;
+    text-align:center;
+}
+
+.menuBarLinks{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    text-shadow: 3px 2px 3px #ffe6ff;
+    font-style: italic;
+
+}
+
+.dropdown-menu> li > .menuBarLinks:hover {
+    background-color:#a6a6a6;
+    border-radius: 20px;
+}
+
+
+
+.navbar .nav > li > a , .navbar-brand{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    text-shadow: 3px 2px 3px #ffe6ff;
+    font-style: italic;
+
+
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color:#a6a6a6;
+    border-radius: 20px;
+
+
+}
+
+
+.displayInlineBlock{
+    display: inline-block;
+}
+
+.testBorder{
+    border: 1px solid white;
+
+}
+
+
+
+#descriptionHeader{
+    margin: 0;
+
+}
+
+.subsrcibeField{
+    width:230px;
+}
+
+.subscribeForm{
+    margin-top: 80px;
+    opacity: 0.9;
+
+}
+
+.subscribeButton{
+    background-color: blanchedalmond;
+    border-radius: 4px;
+}
+
+.subscribePrivacy {
+    font-size: 10px;
+}
+
+.footerContainer{
+    position: static;
+    margin-top: 20px;
+    height:  20px;
+    bottom: 0;
+    border-top:1px solid white ;
+    width: 100%;
+    font-size: small;
+    opacity: 0.7;
+}
+
+.signature{
+    display: inline-block;
+
+
+}
+.signature>a{
+    margin-left :15px;
+    color: white;
+    text-decoration: none;
+}
+.signatureText{
+    font-family: Signature;
+    font-size: 9px ;
+}
+
+
+footer{
+
+    display: block;
+
+}
+
+.copyrights{
+    display: inline-block;
+
+    text-align: right;
+    font-size: 10px;
+
+}
+.copyrights >a{
+    font-family: "Times New Roman";
+    color: white;
+    list-style: none;
+
+}
+
+.forbidden:hover{
+    cursor: not-allowed;
+}
+.mainHeader{
+    margin:4px;
+}
+
+.imageRow{
+    margin-top: 35px;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .mainHeader{
+
+        text-align: center;
+        font-size: 25px;
+
+    }
+    .welcome{
+        margin:10px 0px 10px 0px;
+        font-size: 20px;
+    }
+
+    .dropdown-menu{
+        background-color:white;
+        padding: 1px;
+
+        text-align:left;
+    }
+
+
+
+
+    .footerContainer{
+        position: static;
+        height:  20px;
+        bottom: 0;
+        border-top:1px solid white ;
+        width: 100%;
+
+    }
+
+
+    .specialMargin{
+        margin-left: 0px;
+    }
+
+}
+

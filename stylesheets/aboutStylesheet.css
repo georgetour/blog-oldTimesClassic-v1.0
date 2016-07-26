@@ -1,0 +1,263 @@
+@font-face {
+    font-family: Fertigo;
+    src: url(../fonts/Fertigo.ttf);
+}
+
+@font-face {
+    font-family: Signature;
+    src: url(../fonts/bladrf.ttf);
+}
+
+body{
+    font-family: Fertigo;
+    padding: 0px;
+    margin:0px;
+    background-color: black;
+    color: white;
+
+}
+.main{
+    display: -webkit-flex;
+     display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+}
+
+.topBar{
+    width: 100%;
+    height: 46px;
+    padding: 2px 2px 2px 2px;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 1px solid white;
+    flex-direction: row;
+    text-align: center;
+    order:1;
+    -webkit-order: 1;
+}
+
+.container{
+    -webkit-order: 2;
+    order: 2;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+
+}
+
+.logo{
+    height:40px;
+    width: 210px;
+    padding: 4px 2px 3px 4px;
+}
+
+
+.menuBarLinks{
+    color: white;
+    margin: 7px 0px 0px 5px;
+    padding: 8px 2px 2px 0px ;
+    width: 140px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    text-shadow: 3px 2px 3px #ffe6ff;
+    font-style: italic;
+
+
+}
+
+.specialMargin{
+    margin-left: -20px;
+}
+
+.displayInlineBlock{
+    display: inline-block;
+}
+
+.testBorder{
+    border: 1px solid white;
+}
+
+
+.topBar > a:hover{
+    background-color:#a6a6a6;
+    border-radius:30%;
+
+
+}
+
+
+.imageRow{
+    margin-top: 25px;
+    display:table;
+width: 100%;
+}
+
+.imageDiv{
+    display: table-cell;
+    border: 1px solid white;
+    width:45%;
+        max-height: 300px;
+
+}
+.imageDiv>img {
+    margin-bottom: -5px;
+
+    padding: 0;
+    max-height: 350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description{
+     display: table-cell;
+    vertical-align: top;
+    padding:15px;
+    height: 300px;
+
+}
+
+#descriptionHeader{
+    margin: 0;
+
+}
+
+.subsrcibeField{
+    width:230px;
+}
+
+.subscribeForm{
+    margin-top: 60px;
+    opacity: 0.9;
+
+}
+
+.subscribeButton{
+    background-color: blanchedalmond;
+    border-radius: 4px;
+}
+
+.subscribePrivacy {
+    font-size: small
+}
+
+.footerContainer{
+    position: absolute;
+    height:  20px;
+    bottom: 0;
+    border-top:1px solid white ;
+    width: 100%;
+    font-size: small;
+    opacity: 0.7;
+}
+
+.signature{
+    display: inline-block;
+    width: 49%;
+
+}
+.signature>a{
+    margin-left :15px;
+    color: white;
+    text-decoration: none;
+}
+.signatureText{
+    font-family: Signature;
+    font-size: 9px ;
+}
+
+
+footer{
+
+    display: block;
+
+}
+
+.copyrights{
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    font-size: 10px;
+}
+.copyrights >a{
+    font-family: "Times New Roman";
+}
+
+.forbidden:hover{
+    cursor: not-allowed;
+}
+
+@media screen and (max-width:768px){
+    .main{
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction:column;
+    }
+    .topBar{
+
+        order: 1;
+        -webkit-order: 1;
+        flex: 1;
+        -webkit-flex: 1;
+        height: 250px;
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        -webkit-order: 2;
+        order: 2;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 25px;
+
+    }
+
+    .mainHeader{
+        order: 2;
+        -webkit-order: 2;
+        flex: 1;
+        -webkit-flex: 1;
+        text-align: center;
+    }
+    .menuBarLinks{
+        width: 99%;
+        padding: 2px 2px 2px 0px;
+    }
+
+    .imageRow{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .imageDiv{
+        border: 1px solid red;
+        width:99%;
+        order: 1;
+        max-height: 300px;
+        text-align: center;
+    }
+
+    .description{
+        order: 2;
+        height: 500px;
+    }
+
+    .footerContainer{
+        position: static;
+        height:  20px;
+        bottom: 0;
+        border-top:1px solid white ;
+        width: 100%;
+
+    }
+
+
+    .specialMargin{
+        margin-left: 0px;
+    }
+
+}
+
