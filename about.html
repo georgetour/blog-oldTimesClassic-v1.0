@@ -2,37 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Old Times Classic About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>About</title>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script async src="scripts/jquery-2.2.4.min.js"></script>
+
+    <link href="bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap.min.js">
+    <script async src="scripts/index.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link href="mainStylesheet.css" type="text/css" rel="stylesheet">
-
-
 </head>
+
 <body>
 
-<div class="main">
-    <div class="topBar">
-        <a  href="index.html"><img class="logo" src="images/oldtimesclassicLogo.png"></a>
-        <a class="menuBarLinks " href="recent.html">Recent</a>
-        <a class="menuBarLinks forbidden" href="index.html">Most Popular</a>
-        <a class="menuBarLinks forbidden" href="index.html">by Category</a>
-        <a class="menuBarLinks forbidden" href="index.html">Suggest a game</a>
-        <a class="menuBarLinks " href="about.html">About</a>
-        <a class="menuBarLinks specialMargin forbidden" href="index.html">Contact</a>
+<nav class="navbar navbar-inverse topBar">
+    <div class="">
+        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="images/oldtimesclassicLogo.png"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+
+            <ul class=" nav navbar-nav">
+                <li><a class="menuBarLinks " href="recent.html">Recent</a></a></li>
+                <li><a class="menuBarLinks" href="index.html">Most Popular</a></a></li>
+                <li class="dropdown">
+                    <a class="  dropdown-toggle" data-toggle="dropdown"  href="#">
+                        by Genre
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="menuBarLinks" href="action.html">Action</a></li>
+                        <li><a class="menuBarLinks" href="adventure.html">Adventure</a></li>
+                        <li><a class="menuBarLinks" href="arcade.html">Arcade</a></li>
+                        <li><a class="menuBarLinks" href="beatemup.html">Beat' Em Up</a></li>
+                        <li><a class="menuBarLinks" href="rpg.html">RPG</a></li>
+                        <li><a class="menuBarLinks" href="simulation.html">Simulation</a></li>
+                        <li><a class="menuBarLinks" href="sports.html">Sports</a></li>
+                        <li><a class="menuBarLinks" href="strategy.html">Strategy</a></li>
+                    </ul>
+
+                </li>
+                <li> <a class="menuBarLinks " href="index.html">Suggest a game</a></li>
+                <li> <a class="menuBarLinks " href="about.html">About</a></li>
+                <li><a class="menuBarLinks " href="index.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+
+</nav><!--End top menu bar-->
+
 
 <div class="container"><!--Main container below the navbar-->
     <h2 class="mainHeader">About old Times Classic</h2>
     <div class="imageRow">
-        <div class="imageDiv "><img id="imageSlide" src="images/about/trying%20vr.jpg">  </div>
+        <div class="imageDiv ">
+            <img class=" col-lg-6 col-md-6 col-sm-12 col-xs-12" src="images/about/trying%20vr2.jpg">
+        </div>
 
-        <aside class="description testBorder">
+        <aside class="aboutDescription col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
-            <h3 id="descriptionHeader">
-                About old Times Classic
-            </h3>
+
             <p>Hi, my name is George Tourtsinakis.</p>
             <p> I am a developer and I love playing games.</p>
             <p>My first pc was an IBM 286 and my first console the ATARI 2600.</p>
@@ -48,16 +88,26 @@
     </div>
 
 </div>
-<footer>
 
-    <div class="footerContainer">
-        <div class="signature">
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Privacy</a>
+
+
+<footer class="footerContainer">
+
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+        <div class="col-lg-3 col-md-3 col-xs-12  col-sm-12   ">
+            <div class=" signature col-lg-3 col-md-3 col-xs-4 col-sm-4 ">
+                <a  href="about.html">About</a>
+            </div>
+            <div class="signature col-lg-3 col-md-3  col-xs-4 col-sm-4 ">
+                <a  href="contact.html">Contact</a>
+            </div>
+            <div class="signature col-lg-3 col-md-3 col-xs-4 col-sm-4 ">
+                <a  href="privacy.html">Privacy</a>
+            </div>
         </div>
-        <div class="copyrights">
-            <a>Copyrights© 2016 <span class="signatureText">George Tourtsinakis</span></a>
+
+        <div class="copyrights col-lg-9 col-md-9 col-xs-12  col-sm-12 ">
+            <a href="copyrights.html">Copyrights© 2016 <span class="signatureText">George Tourtsinakis</span></a>
         </div>
     </div>
 

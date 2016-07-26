@@ -205,12 +205,14 @@ footer{
         text-align:left;
     }
 
-
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
 
 
     .footerContainer{
         position: static;
-        height:  20px;
         bottom: 0;
         border-top:1px solid white ;
         width: 100%;
@@ -221,6 +223,14 @@ footer{
     .specialMargin{
         margin-left: 0px;
     }
+
+    .copyrights{
+        text-align: center;
+        font-size: 10px;
+
+    }
+
+
 
 }
 
