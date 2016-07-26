@@ -89,6 +89,14 @@ body{
 
 }
 
+.genreDescirption{
+    margin-top: 10px;
+}
+
+.imagesMaxheight{
+    max-height: 350px;
+}
+
 
 .displayInlineBlock{
     display: inline-block;
@@ -106,15 +114,7 @@ body{
 
 }
 
-.subsrcibeField{
-    width:230px;
-}
 
-.subscribeForm{
-    margin-top: 80px;
-    opacity: 0.9;
-
-}
 
 .subscribeButton{
     background-color: blanchedalmond;
@@ -197,6 +197,14 @@ footer{
         margin:10px 0px 10px 0px;
         font-size: 20px;
     }
+
+    .logo{
+        height:36px;
+        width: 160px;
+
+    }
+
+
 
     .dropdown-menu{
         background-color:white;
