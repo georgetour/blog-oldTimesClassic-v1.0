@@ -150,7 +150,7 @@ body{
 }
 
 .footerContainer{
-    position: static;
+    position: absolute;
     margin-top: 20px;
     height:  20px;
     bottom: 0;
