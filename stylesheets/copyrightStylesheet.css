@@ -1,16 +1,16 @@
 @font-face {
     font-family: Fertigo;
-    src: url(fonts/Fertigo.ttf);
+    src: url(../fonts/Fertigo.ttf);
 }
 
 @font-face {
     font-family: Signature;
-    src: url(fonts/bladrf.ttf);
+    src: url(../fonts/bladrf.ttf);
 }
 
 body{
     font-family: Fertigo;
-    padding: 0px 0px 20px 0px;
+    padding: 0px;
     margin:0px;
     background-color: black;
     color: white;
@@ -84,11 +84,20 @@ body{
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     background-color:#a6a6a6;
-   border-radius: 20px;
+    border-radius: 20px;
 
 
 }
 
+.genreDescirption{
+    margin-top: 10px;
+}
+
+.imagesMaxheight{
+    max-height: 350px;
+
+
+}
 
 .displayInlineBlock{
     display: inline-block;
@@ -99,42 +108,50 @@ body{
 
 }
 
-
-
 #descriptionHeader{
     margin: 0;
-
-}
-
-.subsrcibeField{
-    width:230px;
-    color: grey;
-}
-
-
-.subscribeForm{
-    margin-top: 65px;
-    opacity: 0.9;
 
 }
 
 .subscribeButton{
     background-color: blanchedalmond;
     border-radius: 4px;
-    color: black;
 }
 
 .subscribePrivacy {
     font-size: 10px;
 }
 
-.errorMessage{
-    color: darkred;
+.formRow{
+    padding: 5px;
+
+}
+
+
+
+
+.formDescription{
+    vertical-align: top;
+}
+
+
+.submitButton{
+    background-color: blanchedalmond;
+    border-radius: 4px;
+    color: black;
+ }
+
+
+
+.formField{
+    width: 100%;
+
+    color: black;
 }
 
 .footerContainer{
-
     position: absolute;
+    margin-top: 20px;
     height:  20px;
     bottom: 0;
     border-top:1px solid white ;
@@ -143,13 +160,16 @@ body{
     opacity: 0.7;
 }
 
+.signature{
+    display: inline-block;
 
+
+}
 .signature>a{
-
+    margin-left :15px;
     color: white;
     text-decoration: none;
 }
-
 .signatureText{
     font-family: Signature;
     font-size: 9px ;
@@ -163,7 +183,7 @@ footer{
 }
 
 .copyrights{
-
+    display: inline-block;
 
     text-align: right;
     font-size: 10px;
@@ -197,6 +217,10 @@ footer{
         font-size: 25px;
 
     }
+    .welcome{
+        margin:10px 0px 10px 0px;
+        font-size: 20px;
+    }
 
     .logo{
         height:36px;
@@ -205,18 +229,13 @@ footer{
     }
 
 
-    .welcome{
-        margin:10px 0px 10px 0px;
-        font-size: 20px;
-    }
 
     .dropdown-menu{
         background-color:white;
         padding: 1px;
+
         text-align:left;
     }
-
-
 
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -236,16 +255,14 @@ footer{
     .specialMargin{
         margin-left: 0px;
     }
+
     .copyrights{
         text-align: center;
         font-size: 10px;
 
     }
 
-    .aboutDescription{
-        margin:5px 0 5px 0;
-        font-size: 13px;
 
-    }
+
 }
 

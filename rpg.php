@@ -29,35 +29,35 @@
             <span class="icon-bar"></span>
         </button>
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="images/oldtimesclassicLogo.png"></a>
+            <a class="navbar-brand" href="index.php"><img class="logo" src="images/oldtimesclassicLogo.png"></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
 
             <ul class=" nav navbar-nav">
-                <li><a class="menuBarLinks " href="recent.html">Recent</a></a></li>
-                <li><a class="menuBarLinks" href="index.html">Most Popular</a></a></li>
+                <li><a class="menuBarLinks " href="recent.php">Recent</a></a></li>
+                <li><a class="menuBarLinks" href="index.php">Most Popular</a></a></li>
                 <li class="dropdown">
                     <a class="  dropdown-toggle" data-toggle="dropdown"  href="#">
                         by Genre
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="menuBarLinks" href="action.html">Action</a></li>
-                        <li><a class="menuBarLinks" href="adventure.html">Adventure</a></li>
-                        <li><a class="menuBarLinks" href="arcade.html">Arcade</a></li>
-                        <li><a class="menuBarLinks" href="beatemup.html">Beat' Em Up</a></li>
-                        <li><a class="menuBarLinks" href="platform.html">Platform</a></li>
-                        <li><a class="menuBarLinks" href="rpg.html">RPG</a></li>
-                        <li><a class="menuBarLinks" href="simulation.html">Simulation</a></li>
-                        <li><a class="menuBarLinks" href="sports.html">Sports</a></li>
-                        <li><a class="menuBarLinks" href="strategy.html">Strategy</a></li>
+                        <li><a class="menuBarLinks" href="action.php">Action</a></li>
+                        <li><a class="menuBarLinks" href="adventure.php">Adventure</a></li>
+                        <li><a class="menuBarLinks" href="arcade.php">Arcade</a></li>
+                        <li><a class="menuBarLinks" href="beatemup.php">Beat' Em Up</a></li>
+                        <li><a class="menuBarLinks" href="platform.php">Platform</a></li>
+                        <li><a class="menuBarLinks" href="rpg.php">RPG</a></li>
+                        <li><a class="menuBarLinks" href="simulation.php">Simulation</a></li>
+                        <li><a class="menuBarLinks" href="sports.php">Sports</a></li>
+                        <li><a class="menuBarLinks" href="strategy.php">Strategy</a></li>
                     </ul>
 
                 </li>
                 <li> <a class="menuBarLinks " href="suggestagame.php">Suggest a game</a></li>
-                <li> <a class="menuBarLinks " href="about.html">About</a></li>
-                <li><a class="menuBarLinks " href="contact.html">Contact</a></li>
+                <li> <a class="menuBarLinks " href="about.php">About</a></li>
+                <li><a class="menuBarLinks " href="contact.php">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -120,31 +120,9 @@
 </div>
 
 
+<?php include "footer.php" ?>
 
 
-
-
-<footer class="footerContainer">
-
-    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
-        <div class="col-lg-3 col-md-3 col-xs-12  col-sm-12   ">
-            <div class=" signature col-lg-3 col-md-3 col-xs-4 col-sm-4 ">
-                <a  href="about.html">About</a>
-            </div>
-            <div class="signature col-lg-3 col-md-3  col-xs-4 col-sm-4 ">
-                <a  href="contact.html">Contact</a>
-            </div>
-            <div class="signature col-lg-3 col-md-3 col-xs-4 col-sm-4 ">
-                <a  href="privacy.html">Privacy</a>
-            </div>
-        </div>
-
-        <div class="copyrights col-lg-9 col-md-9 col-xs-12  col-sm-12 ">
-            <a href="copyright.html">Copyrights© 2016 <span class="signatureText">George Tourtsinakis</span></a>
-        </div>
-    </div>
-
-</footer>
 
 
 
