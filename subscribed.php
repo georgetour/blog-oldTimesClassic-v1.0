@@ -79,6 +79,7 @@
             <p>If you think a game isn't in our list, please Suggest a game and it will be added with your nickname.</p>
 
            <div>You have subscribed !Thank you!</div>
+            <div><a href="index.php">Back to main page</a></div>
 
 
         </aside>

@@ -8,7 +8,8 @@ $user = 'root';
 $db_host = 'localhost';
 $db = 'subscribers';
 
-//A function to protect database from sqlo injection
+
+//A function to protect database from sqli injection
 function protect($string){
     global  $connectToDB;
     return mysqli_real_escape_string($connectToDB,trim($string));
@@ -19,8 +20,6 @@ function protect($string){
 if(isset($_POST['subscribeSubmit'])){
     //Store the email from post to a variable
     $email = $_POST['email'];
-
-
 
 
 //Variables to use so we send email to us and the subscriber
@@ -35,7 +34,7 @@ if(isset($_POST['subscribeSubmit'])){
     //Store the connection to a variable
     $connectToDB = mysqli_connect($db_host,$user,$pass,$db)OR die ('Some Problem with the database' .mysqli_connect_error());
 
-    //Protect from strange characters
+    //If email is not empty make it protected
     if(!empty($email)){
         $protectedEmail = protect($email);
 
@@ -54,7 +53,7 @@ if(isset($_POST['subscribeSubmit'])){
 
     //close connection to db
     mysqli_close($connectToDB);
-
+    
 
 
 

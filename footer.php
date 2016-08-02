@@ -14,7 +14,7 @@
         </div>
 
         <div class="copyrights col-lg-9 col-md-9 col-xs-12  col-sm-12 ">
-            <a href="copyright.php">Copyright© 2016 <span class="signatureText">George Tourtsinakis</span> All rights reserved</a>
+            <a href="copyright.php">Copyright© 2016 <span class="signatureText">George Tourtsinakis </span><div class="displayInlineBlock"> All rights reserved</div> </a>
         </div>
     </div>
 

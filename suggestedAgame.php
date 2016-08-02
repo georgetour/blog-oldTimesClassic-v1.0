@@ -65,68 +65,10 @@
 </nav><!--End top menu bar-->
 
 <div class="container"><!--Main container below the navbar-->
-    <h2 class="mainHeader">This is <strong>YOUR</strong> SECTION! Suggest a game !</h2>
-    <p class="genreDescirption">
-        We have heard many games that we didn't know from friends and others so if you think
-        a game must be an old Times Classic bring it on.
-    </p>
+    
     <div class="row ">
-        <form id="suggestAgameForm" class=" col-lg-12 col-md-12 col-xs-12  col-sm-12" method="post" action="suggestAgameToDB.php">
-            <div class="  col-lg-6 col-md-6 col-md-12 col-xs-12 ">
-
-                <div class="formRow ">
-                <label  class=" ">Game Title : </label>
-                <input id="gameTitle" class="form-control"  placeholder="ex Pac-man" type="text" name="gameTitle"maxlength="25" required>
-                </div>
-
-                <div class=" formRow">
-                    <label  class="">Release Date : </label>
-                <input class=" form-control"  placeholder="ex 1995" type="text" pattern="\d*" maxlength="4" name="releaseDate"  required>
-                </div>
-                <div class=" formRow ">
-                    <div class="form-group">
-                        <label for="sel1">Select list:</label>
-                        <select class="form-control" id="sel1" name="genreSelect">
-                            <option value="Action">Action</option>
-                            <option value="Adventure">Adventure</option>
-                            <option value="Arcade">Arcade</option>
-                            <option value="Beat'Em Up">Beat'Em Up</option>
-                            <option value="Platform">Platform</option>
-                            <option value="RPG">RPG</option>
-                            <option value="Simulation">Simulation</option>
-                            <option value="Sports">Sports</option>
-                            <option value="Strategy">Strategy</option>
-
-                        </select>
-                    </div>
-
-                </div>
-                <div class=" formRow ">
-                    <label  class=" descriptionLabel">Suggested By : </label>
-                    <input id="suggestedBy" class="form-control "  placeholder="full name or nickname" type="text" name="suggestedBy" maxlength="50" required >
-
-
-                </div>
-
-                <div class=" formRow  ">
-                    <label  class="descriptionLabel">Email : </label>
-                    <input id="email" class="form-control"  placeholder="Your email" type="email" name="email" required>
-                </div>
-
-            </div>
-            <div class="col-lg-6 col-md-6 col-md-12 col-xs-12">
-                <div class="descriptionLabel">
-                    <label  class=" ">Description :</label>
-                    <textarea id="description" class="form-control formDescription"  placeholder="Be short like our descriptions" type="text" rows="5" name="description" required></textarea>
-
-                </div>
-                <div>Captcha</div>
-                <div><input name="suggestAgameSubmit" class="submitButton" type="submit" value="Suggest a game!"></div>
-                <div id="error">bee</div>
-            </div>
-
-        </form>
-
+        <h3>You have suggested a game and soon it will be an old Times Classic!</h3>
+        <div><a href="index.php">Back to main page</a></div>
     </div>
 
 
