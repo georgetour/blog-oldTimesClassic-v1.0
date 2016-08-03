@@ -19,52 +19,10 @@
 
 <body>
 
-<nav class="navbar navbar-inverse topBar">
-    <div class="">
-        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.php"><img class="logo" src="images/oldtimesclassicLogo.png"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-
-            <ul class=" nav navbar-nav">
-                <li><a class="menuBarLinks " href="recent.php">Recent</a></a></li>
-                <li><a class="menuBarLinks" href="index.php">Most Popular</a></a></li>
-                <li class="dropdown">
-                    <a class="  dropdown-toggle" data-toggle="dropdown"  href="#">
-                        by Genre
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="menuBarLinks" href="action.php">Action</a></li>
-                        <li><a class="menuBarLinks" href="adventure.php">Adventure</a></li>
-                        <li><a class="menuBarLinks" href="arcade.php">Arcade</a></li>
-                        <li><a class="menuBarLinks" href="beatemup.php">Beat' Em Up</a></li>
-                        <li><a class="menuBarLinks" href="platform.php">Platform</a></li>
-                        <li><a class="menuBarLinks" href="rpg.php">RPG</a></li>
-                        <li><a class="menuBarLinks" href="simulation.php">Simulation</a></li>
-                        <li><a class="menuBarLinks" href="sports.php">Sports</a></li>
-                        <li><a class="menuBarLinks" href="strategy.php">Strategy</a></li>
-                    </ul>
-
-                </li>
-                <li> <a class="menuBarLinks " href="suggestagame.php">Suggest a game</a></li>
-                <li> <a class="menuBarLinks " href="about.php">About</a></li>
-                <li><a class="menuBarLinks " href="contact.php">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-
-</nav><!--End top menu bar-->
+<?php include 'navbar.php'?>
 
 <div class="container">
-<p><strong>1. Terms of Use</strong>
+<p ><strong>1. Terms of Use</strong>
     <p>All information provided on and taken from oldtimesclassic.com is of your own free will.
     If you don't accept these Terms and Conditions please stop using this site.
     </p>
@@ -100,14 +58,14 @@
     </p>
 
 
-    <p > <strong>4. Privacy</strong>
+    <p > <strong>3. Privacy</strong>
     <p>We respect your privacy and we won't use or give any info for you in third-party and all info
     you give to this site will strictly stay for this site.
 
     </p>
 
-    <p><strong>5. Reserve Rights </strong>
-           <p> I(George Tourtsinakis) reserve the right to change as I wish ANY of the content of this site at any time without notice .
+    <p><strong>4. Reserve Rights </strong>
+           <p> I reserve the right to change as I wish ANY of the content of this site at any time without notice .
           </p>
     </p>
 

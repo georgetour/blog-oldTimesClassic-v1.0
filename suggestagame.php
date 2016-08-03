@@ -20,49 +20,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse topBar">
-    <div class="">
-        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.php"><img class="logo" src="images/oldtimesclassicLogo.png"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-
-            <ul class=" nav navbar-nav">
-                <li><a class="menuBarLinks " href="recent.php">Recent</a></a></li>
-                <li><a class="menuBarLinks" href="index.php">Most Popular</a></a></li>
-                <li class="dropdown">
-                    <a class="  dropdown-toggle" data-toggle="dropdown"  href="#">
-                        by Genre
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="menuBarLinks" href="action.php">Action</a></li>
-                        <li><a class="menuBarLinks" href="adventure.php">Adventure</a></li>
-                        <li><a class="menuBarLinks" href="arcade.php">Arcade</a></li>
-                        <li><a class="menuBarLinks" href="beatemup.php">Beat' Em Up</a></li>
-                        <li><a class="menuBarLinks" href="platform.php">Platform</a></li>
-                        <li><a class="menuBarLinks" href="rpg.php">RPG</a></li>
-                        <li><a class="menuBarLinks" href="simulation.php">Simulation</a></li>
-                        <li><a class="menuBarLinks" href="sports.php">Sports</a></li>
-                        <li><a class="menuBarLinks" href="strategy.php">Strategy</a></li>
-                    </ul>
-
-                </li>
-                <li> <a class="menuBarLinks " href="suggestagame.php">Suggest a game</a></li>
-                <li> <a class="menuBarLinks " href="about.php">About</a></li>
-                <li><a class="menuBarLinks " href="contact.php">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-
-</nav><!--End top menu bar-->
+<?php include 'navbar.php'?>
 
 <div class="container"><!--Main container below the navbar-->
     <h2 class="mainHeader">This is <strong>YOUR</strong> SECTION! Suggest a game !</h2>
@@ -81,10 +39,50 @@
 
                 <div class=" formRow">
                     <label  class="">Release Date : </label>
-                <input class=" form-control"  placeholder="ex 1995" type="text" pattern="\d*" maxlength="4" name="releaseDate"  required>
+
+                    <select class="form-control" id="sel1" name="genreSelect">
+                        <option value="1980">< 1980</option>
+                        <option value="1981">1981</option>
+                        <option value="1982">1982</option>
+                        <option value="1983">1983</option>
+                        <option value="1984">1984</option>
+                        <option value="1985">1985</option>
+                        <option value="1986">1986</option>
+                        <option value="1987">1987</option>
+                        <option value="1988">1988</option>
+                        <option value="1989">1989</option>
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                        <option value="1995">1995</option>
+                        <option value="1996">1996</option>
+                        <option value="1997">1997</option>
+                        <option value="1998">1998</option>
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+
+                    </select>
+
                 </div>
                 <div class=" formRow ">
-                    <div class="form-group">
+                    <div class="">
                         <label for="sel1">Select list:</label>
                         <select class="form-control" id="sel1" name="genreSelect">
                             <option value="Action">Action</option>
@@ -115,9 +113,9 @@
 
             </div>
             <div class="col-lg-6 col-md-6 col-md-12 col-xs-12">
-                <div class="descriptionLabel">
-                    <label  class=" ">Description :</label>
-                    <textarea id="description" class="form-control formDescription"  placeholder="Be short like our descriptions" type="text" rows="5" name="description" required></textarea>
+                <div class="formRow">
+                    <label  class="des ">Description :</label>
+                    <textarea id="description" class="form-control "  placeholder="Be short like our descriptions" type="text" rows="5" name="description" required></textarea>
 
                 </div>
                 <div>Captcha</div>

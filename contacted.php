@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Suggest a game</title>
+    <title>Contact</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,13 +24,19 @@
 
 <div class="container"><!--Main container below the navbar-->
     
-    <div class="row ">
-        <h3>You have suggested a game and soon it will be an old Times Classic!</h3>
-        <div><a href="index.php">Back to main page</a></div>
+    <?php include 'contactFormToEmail.php'?>
+    <h1>
+        <?php echo $formSubmitted?>
+    </h1>
+    <div > 
+        <?php echo $error_message?>  
     </div>
+    <div><a href="contact.php">Back to form</a></div>
+    <div><a href="index.php">Back to Main Page</a></div>
 
 
-</div>
+
+</div><!--End container -->
 
 
 <?php include "footer.php" ?>
