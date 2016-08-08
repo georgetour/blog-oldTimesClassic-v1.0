@@ -14,7 +14,6 @@
 
             <ul class=" nav navbar-nav">
                 <li><a class="menuBarLinks " href="recent.php">Recent</a></a></li>
-                <li><a class="menuBarLinks" href="index.php">Most Popular</a></a></li>
                 <li class="dropdown">
                     <a class="  dropdown-toggle" data-toggle="dropdown"  href="#">
                         by Genre

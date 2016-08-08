@@ -32,7 +32,7 @@
         <?php echo $error_message?>  
     </div>
     <div><a href="contact.php">Back to form</a></div>
-    <div><a href="index.php">Back to Main Page</a></div>
+    <div><a href="index.php">Back to Home Page</a></div>
 
 
 

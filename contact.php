@@ -50,7 +50,7 @@
 
                 </div>
 
-                <div>Captcha</div>
+                
                 <div><input name="makeContact" class="submitButton" type="submit" value="Make Contact"></div>
             <div id="error">Error to display</div>
            

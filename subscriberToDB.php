@@ -1,5 +1,6 @@
 <?php
 
+include 'createSubscribersDB.php';
 include 'subscribed.php';
 
 //Variables to use so we can connect to db
@@ -23,12 +24,12 @@ if(isset($_POST['subscribeSubmit'])){
 
 
 //Variables to use so we send email to us and the subscriber
-    $to = "tourtsinakis@gmail.com";
+    $to = "subscribed@oldtimesclassic.com";
     $subject ="We have one more subscriber!";
     $message = "User". $email . "has subscribed " ;
-    $from = 'From:tourtsinakis@gmail.com';
+    $from = 'From:'.$email;
 
-
+    //We need email server for this to run
    // mail($to,$subject,$message,$from);
 
     //Store the connection to a variable

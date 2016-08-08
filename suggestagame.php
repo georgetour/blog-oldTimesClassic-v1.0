@@ -34,13 +34,13 @@
 
                 <div class="formRow ">
                 <label  class=" ">Game Title : </label>
-                <input id="gameTitle" class="form-control"  placeholder="ex Pac-man" type="text" name="gameTitle"maxlength="25" required>
+                <input id="gameTitle" class="form-control"  placeholder="ex Pac-man" type="text" name="gameTitle"maxlength="45" required>
                 </div>
 
                 <div class=" formRow">
                     <label  class="">Release Date : </label>
 
-                    <select class="form-control" id="sel1" name="genreSelect">
+                    <select class="form-control" id="sel1" name="releaseDate">
                         <option value="1980">< 1980</option>
                         <option value="1981">1981</option>
                         <option value="1982">1982</option>
@@ -118,9 +118,8 @@
                     <textarea id="description" class="form-control "  placeholder="Be short like our descriptions" type="text" rows="5" name="description" required></textarea>
 
                 </div>
-                <div>Captcha</div>
                 <div><input name="suggestAgameSubmit" class="submitButton" type="submit" value="Suggest a game!"></div>
-                <div id="error">bee</div>
+                <div id="error">Error to display</div>
             </div>
 
         </form>

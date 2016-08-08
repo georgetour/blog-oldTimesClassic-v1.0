@@ -26,7 +26,7 @@
     
     <div class="row ">
         <h3>You have suggested a game and soon it will be an old Times Classic!</h3>
-        <div><a href="index.php">Back to main page</a></div>
+        <div><a href="index.php">Back to home page</a></div>
     </div>
 
 

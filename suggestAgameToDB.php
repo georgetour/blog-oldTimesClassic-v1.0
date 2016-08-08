@@ -1,8 +1,9 @@
 <?php
 
+include 'createGamesDB.php';
 include 'suggestedAgame.php';
 
-$pass = '';
+
 $user = 'root';
 $db_host = 'localhost';
 $db = 'games';
@@ -18,6 +19,7 @@ function protect($string){
 }
 
 if(isset($_POST['suggestAgameSubmit'])){
+
 
     //Store variables from form
     $gameTitle = $_POST['gameTitle'];
