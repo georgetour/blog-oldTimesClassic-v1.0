@@ -1,6 +1,6 @@
 <?php
 
-include 'createSubscribersDB.php';
+//include 'createSubscribersDB.php';
 include 'subscribed.php';
 
 //Variables to use so we can connect to db
@@ -24,16 +24,16 @@ if(isset($_POST['subscribeSubmit'])){
 
 
 //Variables to use so we send email to us and the subscriber
-    $to = "subscribed@oldtimesclassic.com";
+    $to = "hello@oldtimesclassic.com";
     $subject ="We have one more subscriber!";
-    $message = "User". $email . "has subscribed " ;
+    $message = "User ". $email . " has subscribed " ;
     $from = 'From:'.$email;
 
     //We need email server for this to run
-   // mail($to,$subject,$message,$from);
+     mail($to,$subject,$message,$from);
 
     //Store the connection to a variable
-    $connectToDB = mysqli_connect($db_host,$user,$pass,$db)OR die ('Some Problem with the database' .mysqli_connect_error());
+ /*   $connectToDB = mysqli_connect($db_host,$user,$pass,$db)OR die ('Some Problem with the database' .mysqli_connect_error());
 
     //If email is not empty make it protected
     if(!empty($email)){
@@ -56,7 +56,7 @@ if(isset($_POST['subscribeSubmit'])){
     mysqli_close($connectToDB);
     
 
-
+*/
 
 }
 

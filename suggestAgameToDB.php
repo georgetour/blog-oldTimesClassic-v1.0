@@ -1,6 +1,6 @@
 <?php
 
-include 'createGamesDB.php';
+//include 'createGamesDB.php';
 include 'suggestedAgame.php';
 
 
@@ -30,11 +30,20 @@ if(isset($_POST['suggestAgameSubmit'])){
     $description = $_POST['description'];
     $dateAdded = date('d-m-Y');
 
+    //Variables for mail function
+    $to = 'suggestedGame@oldtimesclassic.com';
+    $subject = $suggestedBy . ' have suggested a game !';
+    $message = 'Game Title : '.  $gameTitle ."\n";
+    $message .= 'Release Date : ' .$releaseDate ."\n";
+    $message .= 'Genre : ' . $genre ."\n";
+    $message .= 'Description : ' .$description ."\n";
+    $from = 'From : ' .$email;
 
-    // mail($to,$subject,$message,$from);
+
+     mail($to,$subject,$message,$from);
 
     //Store the connection to a variable
-    $connectToDB = mysqli_connect($db_host,$user,$pass,$db)OR die ('Some Problem with the database' .mysqli_connect_error());
+  /*  $connectToDB = mysqli_connect($db_host,$user,$pass,$db)OR die ('Some Problem with the database' .mysqli_connect_error());
 
     if(!$connectToDB){
         die ('Some Problem with the database' .mysqli_connect_error());
@@ -87,7 +96,7 @@ if(isset($_POST['suggestAgameSubmit'])){
     //close connection
     mysqli_close($connectToDB);
 
-
+*/
 }
 
 

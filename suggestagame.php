@@ -83,7 +83,7 @@
                 </div>
                 <div class=" formRow ">
                     <div class="">
-                        <label for="sel1">Select list:</label>
+                        <label for="sel1">Select genre:</label>
                         <select class="form-control" id="sel1" name="genreSelect">
                             <option value="Action">Action</option>
                             <option value="Adventure">Adventure</option>

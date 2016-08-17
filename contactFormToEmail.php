@@ -1,6 +1,6 @@
 <?php
 
-include_once 'contacted.php';
+include 'contacted.php';
 
 //Variables to use below
 $error_message = '';//Error message for the user if something goes wrong
@@ -11,21 +11,21 @@ $flag = '';// flag to control the form and how it proceeds
 if(isset($_POST['makeContact'])&&(($flag==0))){
 
 
-    //Varibles for the email 
-    $email_to = "hello@oldtimesclassic.com";
-    $email_subject = $_POST['emailSubject'];
-    $email_from = $_POST['email'];
-    $email_message = $_POST['description'];
+    //Variables for the email
+    $to = "hello@oldtimesclassic.com";
+    $subject = $_POST['emailSubject'];
+    $from = $_POST['email'];
+    $message = $_POST['description'];
     
     // create email headers
-    $headers = 'From: '.$email_from."\r\n".
+    $headers = 'From: '.$from."\r\n".
 
-        'Reply-To: '.$email_from."\r\n" .
+        'Reply-To: '.$from."\r\n" .
 
         'X-Mailer: PHP/' . phpversion();
     
 
-    if(!preg_match($email_exp,$email_from)) {
+    if(!preg_match($email_exp,$from)) {
         global $error_message;
         $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
 
@@ -35,7 +35,7 @@ if(isset($_POST['makeContact'])&&(($flag==0))){
     else{
         $formSubmitted = 'Thank you for contacting .I will try to respond soon.';
         $flag = 0;
-        mail($email_to, $email_subject, $email_message, $headers);
+        mail($to, $subject, $message, $headers);
     }
 
 }
