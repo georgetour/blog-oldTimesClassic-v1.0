@@ -20,17 +20,13 @@
 </head>
 <body>
 
-<?php include 'navbar.php'?>
+<?php include_once 'navbar.php'?>
 
 <div class="container"><!--Main container below the navbar-->
-    
-    <?php include 'contactFormToEmail.php'?>
-    <h1>
-        <?php echo $formSubmitted?>
-    </h1>
-    <div > 
-        <?php echo $error_message?>  
-    </div>
+
+    <h3>Thank you for contacting .I will try to respond soon!</h3>
+
+
     <div><a href="contact.php">Back to form</a></div>
     <div><a href="index.php">Back to Home Page</a></div>
 
@@ -39,7 +35,7 @@
 </div><!--End container -->
 
 
-<?php include "footer.php" ?>
+<?php include_once "footer.php" ?>
 
 
 
