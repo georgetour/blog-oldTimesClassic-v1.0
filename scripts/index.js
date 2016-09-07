@@ -23,12 +23,23 @@ $(document).ready(function () {
 
     var imagesLength = images.length;
 
+    //A starting counter for the loop of images
+    var i = 0
+
     //The functions for sliders for images and description with titles etc
     function imageSlider() {
 
 
+
             $('#imageSlide').fadeOut(1800, function () {
-                $('#imageSlide').attr('src', images[(images.length++)%imagesLength]).fadeIn('slow');
+                if(i<imagesLength){
+                    i++;
+                }
+                else{
+                    i=0;
+                }
+
+                $('#imageSlide').attr('src', images[i]).fadeIn('slow');
 
             })
 
