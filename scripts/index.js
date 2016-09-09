@@ -17,7 +17,7 @@ $(document).ready(function () {
     //Starting data
     $('#imageSlide').attr('src',images[8]);
 
-    //The setInterval function so the timer starts and changes the images and text
+    //The setInterval function so the timer starts and runs the imageSlider 
      setInterval(imageSlider,4500);
 
 
@@ -29,9 +29,7 @@ $(document).ready(function () {
     //The functions for sliders for images and description with titles etc
     function imageSlider() {
 
-
-
-            $('#imageSlide').fadeOut(1800, function () {
+				$('#imageSlide').fadeOut(1800, function () {
                 if(i<imagesLength){
                     i++;
                 }
